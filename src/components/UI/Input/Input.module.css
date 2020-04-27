@@ -1,0 +1,89 @@
+.Input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  width: 25%;
+  text-align: left;
+}
+
+.InputElement {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: #ccc;
+}
+
+
+.Invalid {
+  border: 1px solid red;
+  background-color: #FDA49A;
+}
+
+/*
+.ValidationError {
+  color: red;
+  margin: 5px 0;
+}
+*/
+
+/*
+.Invalid {
+  background: #c51244 !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative;
+  display: inline-block !important;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+}
+*/
+
+.ValidationError {
+  background: #d64141 !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: absolute;
+  display: inline-block !important;
+  box-shadow: 2px 2px 2px #aaaaaa;
+  margin: 40px 0 0 108px;
+  color: white;
+  opacity: .85;
+  max-width: 300px;
+  text-align: left;
+}
+
+.ValidationError:before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #d64141;
+  position: absolute;
+  top: -10px;
+}
+
+.Label:after{
+  color: #d64141 !important;
+}
+
+.Invalid input, .Invalid select, .Invalid option{
+  background: #fff0f4;
+  color: #d64141;
+}
